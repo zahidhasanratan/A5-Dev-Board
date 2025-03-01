@@ -35,6 +35,61 @@
           </div>
         </div>
       </header>
+      <main class="grid md:grid-cols-12 gap-6 mt-6 ">
+        
+        <div class="md:col-span-9 bg-white rounded-lg p-4">
+          <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-4 bg-white shadow rounded-lg text-center">
+                <p class="text-gray-500">Task Assigned</p>
+                <p class="text-3xl font-bold">05</p>
+            </div>
+            <div class="p-4 bg-blue-500 text-white text-center rounded-lg">
+                <p class="font-semibold">Discover Something New Today!</p>
+            </div>
+            <div class="p-4 bg-white shadow rounded-lg text-center">
+                <p class="text-gray-500 flex items-center justify-center gap-2">
+                    📅 Wed, <strong>Jul 28 2025</strong>
+                </p>
+            </div>
+        </section>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          <div class="p-4 bg-white shadow rounded-lg">
+              <span class="text-sm text-gray-600 font-semibold">ShopEase</span>
+              <h2 class="font-bold text-lg">Fix Mobile Button Issue</h2>
+              <p class="text-gray-500 text-sm mt-2">Debug using Chrome DevTools...</p>
+              <p class="text-gray-500 text-sm mt-2">Deadline: <strong>21 March 2025</strong></p>
+              <button class="mt-4 w-full bg-blue-500 text-white px-4 py-2 rounded">Completed</button>
+          </div>
+
+          <div class="p-4 bg-white shadow rounded-lg">
+              <span class="text-sm text-gray-600 font-semibold">CloudSync</span>
+              <h2 class="font-bold text-lg">Add Dark Mode</h2>
+              <p class="text-gray-500 text-sm mt-2">Store user preferences...</p>
+              <p class="text-gray-500 text-sm mt-2">Deadline: <strong>21 March 2025</strong></p>
+              <button class="mt-4 w-full bg-gray-300 text-gray-600 px-4 py-2 rounded" disabled>Completed</button>
+          </div>
+
+          <div class="p-4 bg-white shadow rounded-lg">
+              <span class="text-sm text-gray-600 font-semibold">SwiftPay</span>
+              <h2 class="font-bold text-lg">Optimize Home Page</h2>
+              <p class="text-gray-500 text-sm mt-2">Debug using Chrome DevTools...</p>
+              <p class="text-gray-500 text-sm mt-2">Deadline: <strong>21 March 2025</strong></p>
+              <button class="mt-4 w-full bg-blue-500 text-white px-4 py-2 rounded">Completed</button>
+          </div>
+      </div>
+
+        </div>
+        <div class="md:col-span-3 bg-white rounded-lg p-4">
+          <aside class="mt-6 p-4 bg-white shadow rounded-lg">
+            <div class="flex justify-between items-center">
+                <h2 class="font-bold flex items-center gap-2">🔄 Activity Log</h2>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded">Clear History</button>
+            </div>
+            <p class="text-gray-500 mt-4">You have completed the task "Add Dark Mode" at 12:48:15 PM</p>
+            <p class="text-gray-500">You have completed the task "Optimize Home Page" at 12:48:15 PM</p>
+        </aside>
+        </div>
+    </main>
     </div>
   </body>
 </html>
