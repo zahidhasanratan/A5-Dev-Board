@@ -21,84 +21,245 @@
     <div class="max-w-6xl mx-auto">
       <header class="flex justify-between items-center bg-white rounded-lg p-4">
         <div>
-          <img src="./assets/logo2.png" />
+          <img class="w-40" src="./assets/logo2.png" />
         </div>
-        <div class="flex gap-6">
+        <div class="flex gap-6 justify-center items-center">
           <div
             class="flex items-center gap-3 py-2 px-3 bg-[#F4F7FF] rounded-full"
           >
             <img src="./assets/checkbox.png" alt="" />
             <p class="font-bold">23</p>
           </div>
-          <div>
-            <img class="" src="./assets/theme-btn.png" />
+          <div class="bg-[#F4F7FF] rounded-full p-2">
+            <img class="w-7" src="./assets/theme-btn.png" />
           </div>
         </div>
       </header>
-      <main class="grid md:grid-cols-12 gap-6 mt-6 ">
-        
+      <main class="grid md:grid-cols-12 gap-6 mt-6">
         <div class="md:col-span-9 bg-white rounded-lg p-4">
-          <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="p-4 bg-white shadow rounded-lg text-center">
-                <p class="text-gray-500">Task Assigned</p>
-                <p class="text-3xl font-bold">05</p>
+          <div class="grid grid-cols-4 gap-4 items-center">
+            <div
+              class="bg-[#F3F6FF] p-4 rounded-lg flex flex-col items-center justify-center col-span-1"
+            >
+              <div class="flex items-center space-x-2">
+                <img src="./assets/checkbox.png" class="w-5 h-5" />
+                <span class="text-gray-600 text-sm">Task Assigned</span>
+              </div>
+              <span class="text-xl font-bold text-[#00303C]">05</span>
             </div>
-            <div class="p-4 bg-blue-500 text-white text-center rounded-lg">
-                <p class="font-semibold">Discover Something New Today!</p>
+
+            <div
+              class="bg-gradient-to-r from-[#5B73FF] to-[#A7BCFF] p-4 rounded-lg flex items-center justify-center space-x-3 text-white col-span-2"
+            >
+              <img src="./assets/board.png" class="w-8 h-8" />
+              <span class="text-lg font-semibold"
+                >Discover Something <br />
+                New Today!</span
+              >
             </div>
-            <div class="p-4 bg-white shadow rounded-lg text-center">
-                <p class="text-gray-500 flex items-center justify-center gap-2">
-                    📅 Wed, <strong>Jul 28 2025</strong>
-                </p>
+
+            <div
+              class="bg-[#F3F6FF] p-4 rounded-lg flex flex-col items-center justify-center col-span-1"
+            >
+              <div class="flex items-center space-x-2">
+                <img src="./assets/calender.png" class="w-5 h-5" />
+                <span class="text-gray-600 text-sm">Wed ,</span>
+              </div>
+              <span class="text-xl font-bold text-[#00303C]">Jul 28 2025</span>
             </div>
-        </section>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-          
-          <div class="bg-[#F8FAFF] p-4 rounded-xl">
-           
-            <span class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block">ShopEase</span>
-        
-          
-            <h2 class="text-lg font-semibold text-gray-900 mt-3">Fix Mobile Button Issue</h2>
-        
-            
-            <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-3">
+          </div>
+
+          <div class="border-t border-dashed border-gray-300 my-3"></div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 mb-6">
+            <div class="bg-[#F8FAFF] p-4 rounded-xl">
+              <span
+                class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block"
+                >ShopEase</span
+              >
+              <h2 class="text-lg font-semibold text-gray-900 mt-3">
+                Fix Mobile Button Issue
+              </h2>
+              <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-3">
                 Debug using Chrome DevTools, check for overlappi...
-            </p>
-        
-            
-            <div class="border-t border-dashed border-gray-300 my-3"></div>
-        
-           
-            <div class="flex justify-between items-center">
+              </p>
+              <div class="border-t border-dashed border-gray-300 my-3"></div>
+              <div class="flex justify-between items-center">
                 <div>
-                    <p class="text-xs text-gray-500">Deadline</p>
-                    <p class="text-sm font-semibold text-gray-900">21 March 2025</p>
+                  <p class="text-xs text-gray-500">Deadline</p>
+                  <p class="text-sm font-semibold text-gray-900">
+                    21 March 2025
+                  </p>
                 </div>
-                <button class="bg-[#3752FD] text-white text-sm rounded py-1 px-3">Completed</button>
+                <button
+                  class="bg-[#3752FD] text-white text-sm rounded py-1 px-3"
+                >
+                  Completed
+                </button>
+              </div>
             </div>
 
-        </div>
-        
+            <div class="bg-[#F8FAFF] p-4 rounded-xl">
+              <span
+                class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block"
+                >CloudSync</span
+              >
+              <h2 class="text-lg font-semibold text-gray-900 mt-3">
+                Add Dark Mode
+              </h2>
+              <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-3">
+                Store the user's preference in localStorage, update CSS vari....
+              </p>
+              <div class="border-t border-dashed border-gray-300 my-3"></div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <p class="text-xs text-gray-500">Deadline</p>
+                  <p class="text-sm font-semibold text-gray-900">
+                    21 March 2025
+                  </p>
+                </div>
+                <button
+                  class="bg-[#3752FD] text-white text-sm rounded py-1 px-3"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
 
+            <div class="bg-[#F8FAFF] p-4 rounded-xl">
+              <span
+                class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block"
+                >SwiftPay</span
+              >
+              <h2 class="text-lg font-semibold text-gray-900 mt-3">
+                Optimize Home page 
+              </h2>
+              <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-3">
+                Debug using Chrome DevTools, check for overlappin....
+              </p>
+              <div class="border-t border-dashed border-gray-300 my-3"></div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <p class="text-xs text-gray-500">Deadline</p>
+                  <p class="text-sm font-semibold text-gray-900">
+                    21 March 2025
+                  </p>
+                </div>
+                <button
+                  class="bg-[#3752FD] text-white text-sm rounded py-1 px-3"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
 
-       
-      
-        
-      </div>
+            <div class="bg-[#F8FAFF] p-4 rounded-xl">
+              <span
+                class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block"
+                >Meta</span
+              >
+              <h2 class="text-lg font-semibold text-gray-900 mt-3">
+                Add new emoji 🤲
+              </h2>
+              <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-3">
+                Debug using Chrome DevTools, check for overlapp....
+              </p>
+              <div class="border-t border-dashed border-gray-300 my-3"></div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <p class="text-xs text-gray-500">Deadline</p>
+                  <p class="text-sm font-semibold text-gray-900">
+                    21 March 2025
+                  </p>
+                </div>
+                <button
+                  class="bg-[#3752FD] text-white text-sm rounded py-1 px-3"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
 
+            <div class="bg-[#F8FAFF] p-4 rounded-xl">
+              <span
+                class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block"
+                >Google LLC</span
+              >
+              <h2 class="text-lg font-semibold text-gray-900 mt-3">
+                Integrate OpenAI API
+              </h2>
+              <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-3">
+                Debug using Chrome DevTools, check for overlappin....
+              </p>
+              <div class="border-t border-dashed border-gray-300 my-3"></div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <p class="text-xs text-gray-500">Deadline</p>
+                  <p class="text-sm font-semibold text-gray-900">
+                    21 March 2025
+                  </p>
+                </div>
+                <button
+                  class="bg-[#3752FD] text-white text-sm rounded py-1 px-3"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div class="bg-[#F8FAFF] p-4 rounded-xl">
+              <span
+                class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block"
+                >Glassdoar</span
+              >
+              <h2 class="text-lg font-semibold text-gray-900 mt-3">
+                Improve Job searching
+              </h2>
+              <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-3">
+                Debug using Chrome DevTools, check for overlappin....
+              </p>
+              <div class="border-t border-dashed border-gray-300 my-3"></div>
+              <div class="flex justify-between items-center">
+                <div>
+                  <p class="text-xs text-gray-500">Deadline</p>
+                  <p class="text-sm font-semibold text-gray-900">
+                    21 March 2025
+                  </p>
+                </div>
+                <button
+                  class="bg-[#3752FD] text-white text-sm rounded py-1 px-3"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="md:col-span-3 bg-white rounded-lg p-4">
-          <aside class="mt-6 p-4 bg-white shadow rounded-lg">
-            <div class="flex justify-between items-center">
-                <h2 class="font-bold flex items-center gap-2">🔄 Activity Log</h2>
-                <button class="bg-blue-500 text-white px-4 py-2 rounded">Clear History</button>
+          <div class="flex justify-center items-center space-x-2">
+            <img class="w-5 h-5" src="./assets/activity.png" alt="" />
+            <h2 class="text-lg font-semibold text-[#00303C]">Activity Log</h2>
+          </div>
+
+          <div class="flex justify-center mt-3">
+            <button
+              class="bg-[#3752FD] text-white text-sm font-medium rounded-md py-2 px-2 w-2/3"
+            >
+              Clear History
+            </button>
+          </div>
+
+          <div class="border-t border-dashed border-gray-300 my-4"></div>
+
+          <div class="space-y-3">
+            <div class="bg-[#F3F6FF] text-gray-700 text-sm p-3 rounded-md">
+              You have Completed The Task "Add Dark Mode" at 12:48:15 PM
             </div>
-            <p class="text-gray-500 mt-4">You have completed the task "Add Dark Mode" at 12:48:15 PM</p>
-            <p class="text-gray-500">You have completed the task "Optimize Home Page" at 12:48:15 PM</p>
-        </aside>
+
+            <div class="bg-[#F3F6FF] text-gray-700 text-sm p-3 rounded-md">
+              You have Completed The Task "Add Dark Mode" at 12:48:15 PM
+            </div>
+          </div>
         </div>
-    </main>
+      </main>
     </div>
   </body>
 </html>
