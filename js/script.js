@@ -40,9 +40,20 @@ function addCompletionMessage(titleElement) {
     "rounded-md",
     "mb-4"
   );
-  completionMessage.innerText = `You have Completed The Task "${taskTitle}" at ${currentTime}`;
+  completionMessage.innerText = `You have Completed The Task ${taskTitle} at ${currentTime}`;
   const messageContainer = document.querySelector(
     "#completionMessagesContainer"
   );
   messageContainer.appendChild(completionMessage);
 }
+
+// History Clear Function
+
+const clearHistoryButton = document.querySelector("#clearHistoryBtn");
+const completionMessagesContainer = document.querySelector(
+  "#completionMessagesContainer"
+);
+
+clearHistoryButton.addEventListener("click", function () {
+  completionMessagesContainer.innerHTML = "";
+});
