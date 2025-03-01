@@ -57,3 +57,23 @@ const completionMessagesContainer = document.querySelector(
 clearHistoryButton.addEventListener("click", function () {
   completionMessagesContainer.innerHTML = "";
 });
+
+// Bg color change
+
+document.addEventListener("DOMContentLoaded", function () {
+  const themeButton = document.getElementById("themeButton");
+  const body = document.getElementById("mainBody");
+
+  themeButton.addEventListener("click", function () {
+    const colors = [
+      "#F4F7FF",
+      "#FFD700",
+      "#FF6347",
+      "#90EE90",
+      "#ADD8E6",
+      "#DDA0DD",
+    ];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    body.style.backgroundColor = randomColor;
+  });
+});

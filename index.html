@@ -31,9 +31,14 @@
             <img src="./assets/checkbox.png" alt="" />
             <p id="mainCount" class="font-bold">23</p>
           </div>
-          <div class="bg-[#F4F7FF] rounded-full p-2">
-            <img class="w-7" src="./assets/theme-btn.png" />
-          </div>
+          <body id="mainBody" class="poppins-font p-6">
+            <div
+              class="bg-[#F4F7FF] rounded-full p-2 cursor-pointer"
+              id="themeButton"
+            >
+              <img class="w-7" src="./assets/theme-btn.png" />
+            </div>
+          </body>
         </div>
       </header>
       <!-- Header Section Ended  -->
@@ -79,7 +84,19 @@
                 </div>
                 <div>
                   <p class="text-gray-600 text-sm">Wed ,</p>
-                  <p class="text-l font-bold text-[#00303C]">Jul 28 2025</p>
+                  <p class="text-l font-bold text-[#00303C]">
+                    <script>
+                      document.write(
+                        new Date()
+                          .toLocaleDateString("en-US", {
+                            month: "short",
+                            day: "2-digit",
+                            year: "numeric",
+                          })
+                          .replace(",", "")
+                      );
+                    </script>
+                  </p>
                 </div>
               </div>
             </div>
