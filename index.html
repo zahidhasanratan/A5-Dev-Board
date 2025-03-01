@@ -29,7 +29,7 @@
             class="flex items-center gap-3 py-2 px-3 bg-[#F4F7FF] rounded-full"
           >
             <img src="./assets/checkbox.png" alt="" />
-            <p class="font-bold">23</p>
+            <p id="mainCount" class="font-bold">23</p>
           </div>
           <div class="bg-[#F4F7FF] rounded-full p-2">
             <img class="w-7" src="./assets/theme-btn.png" />
@@ -52,7 +52,9 @@
 
                 <div>
                   <p class="text-gray-600 text-sm">Task Assigned</p>
-                  <p class="text-xl font-bold text-[#00303C]">05</p>
+                  <p id="taskNum" class="text-xl font-bold text-[#00303C]">
+                    06
+                  </p>
                 </div>
               </div>
             </div>
@@ -84,7 +86,7 @@
 
           <div class="border-t border-dashed border-gray-300 my-3"></div>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6 mb-6">
-            <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <div id="card1" class="bg-[#F4F7FF] p-4 rounded-xl">
               <span
                 class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block"
                 >ShopEase</span
@@ -104,6 +106,7 @@
                   </p>
                 </div>
                 <button
+                  id="completeBtn"
                   class="bg-[#3752FD] text-white text-sm rounded py-1 px-3"
                 >
                   Completed
@@ -111,7 +114,7 @@
               </div>
             </div>
 
-            <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <div id="card2" class="bg-[#F4F7FF] p-4 rounded-xl">
               <span
                 class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block"
                 >CloudSync</span
@@ -127,10 +130,11 @@
                 <div>
                   <p class="text-xs text-gray-500">Deadline</p>
                   <p class="text-sm font-semibold text-gray-900">
-                    21 March 2025
+                    23 March 2025
                   </p>
                 </div>
                 <button
+                  id="completeBtn"
                   class="bg-[#3752FD] text-white text-sm rounded py-1 px-3"
                 >
                   Completed
@@ -138,7 +142,7 @@
               </div>
             </div>
 
-            <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <div id="card3" class="bg-[#F4F7FF] p-4 rounded-xl">
               <span
                 class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block"
                 >SwiftPay</span
@@ -154,10 +158,11 @@
                 <div>
                   <p class="text-xs text-gray-500">Deadline</p>
                   <p class="text-sm font-semibold text-gray-900">
-                    21 March 2025
+                    24 March 2025
                   </p>
                 </div>
                 <button
+                  id="completeBtn"
                   class="bg-[#3752FD] text-white text-sm rounded py-1 px-3"
                 >
                   Completed
@@ -165,7 +170,7 @@
               </div>
             </div>
 
-            <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <div id="card4" class="bg-[#F4F7FF] p-4 rounded-xl">
               <span
                 class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block"
                 >Meta</span
@@ -181,10 +186,11 @@
                 <div>
                   <p class="text-xs text-gray-500">Deadline</p>
                   <p class="text-sm font-semibold text-gray-900">
-                    21 March 2025
+                    25 March 2025
                   </p>
                 </div>
                 <button
+                  id="completeBtn"
                   class="bg-[#3752FD] text-white text-sm rounded py-1 px-3"
                 >
                   Completed
@@ -192,7 +198,7 @@
               </div>
             </div>
 
-            <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <div id="card5" class="bg-[#F4F7FF] p-4 rounded-xl">
               <span
                 class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block"
                 >Google LLC</span
@@ -208,17 +214,18 @@
                 <div>
                   <p class="text-xs text-gray-500">Deadline</p>
                   <p class="text-sm font-semibold text-gray-900">
-                    21 March 2025
+                    26 March 2025
                   </p>
                 </div>
                 <button
+                  id="completeBtn"
                   class="bg-[#3752FD] text-white text-sm rounded py-1 px-3"
                 >
                   Completed
                 </button>
               </div>
             </div>
-            <div class="bg-[#F4F7FF] p-4 rounded-xl">
+            <div id="card6" class="bg-[#F4F7FF] p-4 rounded-xl">
               <span
                 class="text-sm text-gray-600 bg-white py-1 px-3 rounded-lg inline-block"
                 >Glassdoar</span
@@ -234,10 +241,11 @@
                 <div>
                   <p class="text-xs text-gray-500">Deadline</p>
                   <p class="text-sm font-semibold text-gray-900">
-                    21 March 2025
+                    27 March 2025
                   </p>
                 </div>
                 <button
+                  id="completeBtn"
                   class="bg-[#3752FD] text-white text-sm rounded py-1 px-3"
                 >
                   Completed
@@ -266,18 +274,17 @@
           <div class="border-t border-dashed border-gray-300 my-4"></div>
 
           <div class="space-y-5">
-            <div class="bg-[#F4F7FF] text-gray-700 text-sm p-3 rounded-md">
+            <!-- <div class="bg-[#F4F7FF] text-gray-700 text-sm p-3 rounded-md">
               You have Completed The Task "Add Dark Mode" at 12:48:15 PM
-            </div>
+            </div> -->
 
-            <div class="bg-[#F4F7FF] text-gray-700 text-sm p-3 rounded-md">
-              You have Completed The Task "Add Dark Mode" at 12:48:15 PM
-            </div>
+            <div id="completionMessagesContainer"></div>
           </div>
         </div>
         <!-- Sidebar Section Ended -->
       </main>
       <!-- Main Section Ended  -->
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
