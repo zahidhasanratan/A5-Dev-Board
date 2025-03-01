@@ -19,6 +19,7 @@
   </head>
   <body class="poppins-font bg-[#F4F7FF] p-6">
     <div class="max-w-6xl mx-auto">
+      <!-- Header Section Started  -->
       <header class="flex justify-between items-center bg-white rounded-lg p-4">
         <div>
           <img class="w-40" src="./assets/logo2.png" />
@@ -35,23 +36,28 @@
           </div>
         </div>
       </header>
+      <!-- Header Section Ended  -->
+      <!-- Main Section Started  -->
       <main class="grid md:grid-cols-12 gap-6 mt-6">
+        <!-- Main Body Section Started -->
         <div class="md:col-span-9 bg-white rounded-lg p-4">
           <div class="grid grid-cols-4 gap-4 items-center">
             <div
               class="bg-[#F3F6FF] p-4 rounded-lg flex flex-col items-center justify-center col-span-1"
             >
-              <div class="flex items-center space-x-2">
+              <div class="flex items-center gap-4">
                 <img src="./assets/checkbox.png" class="w-5 h-5" />
-                <span class="text-gray-600 text-sm">Task Assigned</span>
+                <div>
+                  <p class="text-gray-600 text-sm">Task Assigned</p>
+                  <p class="text-xl font-bold text-[#00303C]">05</p>
+                </div>
               </div>
-              <span class="text-xl font-bold text-[#00303C]">05</span>
             </div>
 
             <div
-              class="bg-gradient-to-r from-[#5B73FF] to-[#A7BCFF] p-4 rounded-lg flex items-center justify-center space-x-3 text-white col-span-2"
+              class="bg-gradient-to-r gap-4 from-[#3752FD] to-[#9BA8F8] p-4 rounded-lg flex items-center justify-center text-white col-span-2"
             >
-              <img src="./assets/board.png" class="w-8 h-8" />
+              <img src="./assets/board.png" class="w-12 h-12" />
               <span class="text-lg font-semibold"
                 >Discover Something <br />
                 New Today!</span
@@ -61,11 +67,13 @@
             <div
               class="bg-[#F3F6FF] p-4 rounded-lg flex flex-col items-center justify-center col-span-1"
             >
-              <div class="flex items-center space-x-2">
+              <div class="flex items-center space-x-2 gap-4">
                 <img src="./assets/calender.png" class="w-5 h-5" />
-                <span class="text-gray-600 text-sm">Wed ,</span>
+                <div>
+                  <p class="text-gray-600 text-sm">Wed ,</p>
+                  <p class="text-xl font-bold text-[#00303C]">Jul 28 2025</p>
+                </div>
               </div>
-              <span class="text-xl font-bold text-[#00303C]">Jul 28 2025</span>
             </div>
           </div>
 
@@ -233,6 +241,9 @@
             </div>
           </div>
         </div>
+        <!-- Main Body Section Ended -->
+        <!-- Sidebar Section Started -->
+
         <div class="md:col-span-3 bg-white rounded-lg p-4">
           <div class="flex justify-center items-center space-x-2">
             <img class="w-5 h-5" src="./assets/activity.png" alt="" />
@@ -259,7 +270,9 @@
             </div>
           </div>
         </div>
+        <!-- Sidebar Section Ended -->
       </main>
+      <!-- Main Section Ended  -->
     </div>
   </body>
 </html>
